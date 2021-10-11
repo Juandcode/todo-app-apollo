@@ -1,0 +1,17 @@
+type Todo {
+    id:Int
+    completado:String
+    nombre:String
+
+}
+type User{
+    id:Int
+    email:String
+    token:String
+}
+type Query{
+    todosUser:Todo!
+}
+type Mutation{
+    login(email:String!,password:String!):User
+}
